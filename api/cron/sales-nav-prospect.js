@@ -147,7 +147,7 @@ module.exports = async (req, res) => {
             const existingContacts = await hubspot.client.crm.contacts.searchApi.doSearch({
               filterGroups: [{
                 filters: [{
-                  propertyName: 'linkedin_url',
+                  propertyName: 'hs_linkedin_url',
                   operator: 'EQ',
                   value: prospect.profileUrl
                 }]
@@ -250,7 +250,7 @@ module.exports = async (req, res) => {
                 state: prospect.location.split(',')[1]?.trim(),
                 
                 // LinkedIn
-                linkedin_url: prospect.profileUrl,
+                hs_linkedin_url: prospect.profileUrl,
                 sales_nav_profile_url: prospect.salesNavUrl,
                 
                 // AI-generated icebreaker (replaces Clay)
