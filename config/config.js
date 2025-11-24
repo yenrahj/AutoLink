@@ -525,8 +525,8 @@ module.exports = {
       inMailCreditsUsed: "inmail_credits_used",
       salesNavList: "sales_nav_list",
       
-      // Persona
-      persona: "persona"
+      // Persona (use linkedin_persona to avoid conflict with existing persona field)
+      persona: "linkedin_persona"
     },
     
     // Lifecycle stage mapping
