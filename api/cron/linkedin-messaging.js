@@ -36,7 +36,7 @@ module.exports = async (req, res) => {
 
     for (const contact of contacts) {
       try {
-        const linkedinUrl = contact.properties.linkedin_url;
+        const linkedinUrl = contact.properties.hs_linkedin_url;
         
         if (!linkedinUrl) {
           console.log(`⚠️  Skipping ${contact.properties.firstname} - no LinkedIn URL`);
