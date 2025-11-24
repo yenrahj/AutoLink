@@ -4,9 +4,7 @@
   "description": "LinkedIn Puppeteer automation with HubSpot integration",
   "main": "index.js",
   "scripts": {
-    "dev": "vercel dev",
-    "build": "vercel build",
-    "deploy": "vercel deploy --prod"
+    "dev": "vercel dev"
   },
   "dependencies": {
     "@hubspot/api-client": "^11.2.0",
