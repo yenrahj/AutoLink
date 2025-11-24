@@ -3,13 +3,16 @@
   "version": "1.0.0",
   "description": "LinkedIn Puppeteer automation with HubSpot integration",
   "main": "index.js",
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
     "dev": "vercel dev"
   },
   "dependencies": {
     "@hubspot/api-client": "^11.2.0",
     "puppeteer-core": "^23.4.0",
-    "@sparticuz/chromium": "^129.0.0",
+    "@sparticuz/chromium-min": "^129.0.0",
     "openai": "^4.20.1",
     "date-fns": "^3.0.0"
   },
