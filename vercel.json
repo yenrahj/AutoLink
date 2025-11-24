@@ -1,0 +1,26 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron/sales-nav-prospect",
+      "schedule": "0 8 * * 1"
+    },
+    {
+      "path": "/api/cron/warm-up-engagement",
+      "schedule": "0 11 * * *"
+    },
+    {
+      "path": "/api/cron/linkedin-daily",
+      "schedule": "0 9 * * *"
+    },
+    {
+      "path": "/api/cron/linkedin-messaging",
+      "schedule": "0 14 * * *"
+    }
+  ],
+  "functions": {
+    "api/**/*.js": {
+      "memory": 3008,
+      "maxDuration": 300
+    }
+  }
+}

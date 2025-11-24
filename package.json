@@ -1,0 +1,21 @@
+{
+  "name": "linkedin-automation",
+  "version": "1.0.0",
+  "description": "LinkedIn Puppeteer automation with HubSpot integration",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "vercel build",
+    "deploy": "vercel deploy --prod"
+  },
+  "dependencies": {
+    "@hubspot/api-client": "^11.2.0",
+    "puppeteer-core": "^21.6.1",
+    "@sparticuz/chromium": "^119.0.2",
+    "openai": "^4.20.1",
+    "date-fns": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0"
+  }
+}
