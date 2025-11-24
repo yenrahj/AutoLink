@@ -73,8 +73,8 @@ module.exports = async (req, res) => {
 
         // Navigate to Sales Navigator People Search
         await bot.page.goto('https://www.linkedin.com/sales/search/people', {
-          waitUntil: 'networkidle2',
-          timeout: 30000
+          waitUntil: 'domcontentloaded',
+          timeout: 60000
         });
         await bot.randomDelay(2000, 3000);
 
@@ -170,8 +170,8 @@ module.exports = async (req, res) => {
 
             // Navigate to prospect's Sales Nav profile
             await bot.page.goto(prospect.salesNavUrl, {
-              waitUntil: 'networkidle2',
-              timeout: 30000
+              waitUntil: 'domcontentloaded',
+              timeout: 60000
             });
             await bot.randomDelay(2000, 3000);
 
