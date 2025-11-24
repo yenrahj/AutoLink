@@ -494,26 +494,36 @@ module.exports = {
     
     // Property mappings
     propertyMappings: {
-      // Standard properties
+      // Standard HubSpot properties (use these, don't create custom)
       firstName: "firstname",
       lastName: "lastname", 
       email: "email",
       company: "company",
       title: "jobtitle",
       phone: "phone",
+      city: "city",
+      state: "state",
+      linkedInUrl: "hs_linkedin_url",  // Standard HubSpot field
       
       // Custom properties (create these in HubSpot)
-      linkedInUrl: "linkedin_url",
       salesNavUrl: "sales_nav_profile_url",
       icebreaker: "icebreaker",
       automationStatus: "linkedin_automation_status",
       warmUpCount: "linkedin_warm_up_count",
       lastActivity: "linkedin_last_activity",
+      lastEngagementType: "linkedin_last_engagement_type",
+      connectionMessage: "linkedin_connection_message",
+      messageContent: "linkedin_message_content",
+      lastError: "linkedin_last_error",
+      connectionDate: "linkedin_connection_date",
       
       // Sales Navigator data
       insights: "sales_nav_insights",
       connectionPath: "connection_path",
       sharedConnections: "shared_connections",
+      recentJobChange: "recent_job_change",
+      inMailCreditsUsed: "inmail_credits_used",
+      salesNavList: "sales_nav_list",
       
       // Persona
       persona: "persona"
